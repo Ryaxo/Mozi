@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso Amor 💖</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="titulo">Nosso Amor 💖</h1>
+        <img src="mozimozona.jpg" alt="Nossa foto" class="foto">
+        <div id="contador"></div>
+        <p class="frase">A razão do meu sorriso encontro em ti, assim como a eternidade no nosso amor.</p>
+    </div>
+
+
+    <audio id="musica" preload="auto" loop>
+        <source src="Apocalypse.mp3" type="audio/mp3">
+        Seu navegador não suporta o formato de áudio.
+    </audio>
+
+    <script>
+        // Função para iniciar a música ao clicar na página
+        document.body.addEventListener('click', function() {
+            const musica = document.getElementById('musica');
+            musica.play();
+            musica.volume = 0.1;  // Ajusta o volume para 10%
+        });
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>

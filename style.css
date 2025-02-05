@@ -1,0 +1,74 @@
+body {
+    background-color: #ffebee;
+    color: #d50000;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.titulo {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: -40px;
+    text-shadow: 0 0 1px #000000;
+    color: #d50000;
+}
+
+.foto {
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid #d50000;
+}
+
+#contador {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-shadow: 0 0 1px #000000;
+}
+
+.frase {
+    font-size: 16px;
+    font-style: italic;
+    color: #b71c1c;
+    margin-top: 30px;
+    text-shadow: 0 0 1px #000000;
+}
+
+/* Corações caindo */
+.coracao {
+    position: fixed;
+    top: -10px;
+    width: 30px;
+    height: 30px;
+    animation: cair linear infinite;
+    opacity: 1;
+}
+
+@keyframes cair {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
